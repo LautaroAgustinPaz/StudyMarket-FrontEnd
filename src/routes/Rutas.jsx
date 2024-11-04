@@ -1,8 +1,15 @@
+import { useRoutes } from 'react-router-dom'
+import Inicio from '../pages/Inicio'
 
 const Rutas = () => {
-  return (
-    <div>Rutas</div>
+  const rutas = useRoutes(
+    [
+      { path: '/',
+        element: <Inicio/>
+      }
+    ]
   )
+  return rutas
 }
 
 export default Rutas

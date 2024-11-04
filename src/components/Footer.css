@@ -1,9 +1,9 @@
 footer {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 1;
   z-index: 1;
-
+  display: block;
 }
 
 footer h5 {
