@@ -7,5 +7,5 @@ const Ayuda = () => {
     </div>
   )
 }
-
+ 
 export default Ayuda

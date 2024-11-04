@@ -54,3 +54,11 @@ footer::after {
   background: linear-gradient(to right, #2cd59f, #1969c2);
   z-index: -1;
 }
+
+/* Botones */
+.btn {
+  background: linear-gradient(to right, #2cd59f, #1969c2);
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  border: 1px solid #fff;
+}

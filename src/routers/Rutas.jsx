@@ -3,11 +3,11 @@ import Inicio from '../pages/Inicio'
 import Nosotros from '../pages/Conocenos'
 import Productos from '../pages/Productos'
 import NoEncontrado from '../pages/NoEncontrado'
+import Ayuda from '../pages/Ayuda'
+import Registro from '../pages/Registro'
 
 const Rutas = () => {
 
-    // Me va a permitir describir como va a ser el router de mi aplicación pero en formato array de objetos
-    // https://reactrouter.com/en/main/hooks/use-routes
     const rutas = useRoutes(
         [
             {
@@ -22,9 +22,13 @@ const Rutas = () => {
                 path: '/nosotros',
                 element: <Nosotros />
             },
-                        {
+            {
                 path: '/ayuda',
                 element: <Ayuda />
+            },
+            {
+                path: '/registro',
+                element: <Registro />
             },
             {
                 path: '*',
