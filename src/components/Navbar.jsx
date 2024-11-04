@@ -1,5 +1,4 @@
 import {Link} from "react-router-dom";
-import './Navbar.css'
 
 const Navbar = () => {
   return (
@@ -18,8 +17,14 @@ const Navbar = () => {
           </div>
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-start flex-grow-1 pe-3 mt-2">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">Inicio</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/tienda">Tienda</Link>
+              </li>
               <li className="nav-item dropdown">
-                <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <Link className="nav-link dropdown-toggle" to="/productos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Productos
                 </Link>
                 <ul className="dropdown-menu">
@@ -28,10 +33,10 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">Contaco</Link>
+                <Link className="nav-link" to="/conocenos">Conocenos</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">Ayuda</Link>
+                <Link className="nav-link" to="/ayuda">Ayuda</Link>
               </li>
             </ul>
             <form className="d-flex mt-2" role="search">

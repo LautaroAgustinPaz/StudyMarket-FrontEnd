@@ -1,8 +1,14 @@
 @import 'bootstrap'; /* hojas de estilo de bootstrap */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Globales */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+body {
+    background-color: rgb(222, 222, 222);
 }
