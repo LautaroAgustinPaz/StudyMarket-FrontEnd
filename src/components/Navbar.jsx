@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary absolute-top">
       <div className="container-fluid">
         <Link className="navbar-brand" to="#">
           <img src="../../public/logo/Logo.png" alt="StudyMarket" width="40" height="42"/>
