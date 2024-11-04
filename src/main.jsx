@@ -1,6 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import App from './App'; // Importa el componente principal
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import * as bootstrap from 'bootstrap'
+import App from './App.jsx'
+import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)

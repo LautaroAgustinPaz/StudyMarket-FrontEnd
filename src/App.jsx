@@ -1,15 +1,16 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-
+import { BrowserRouter } from "react-router-dom"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 import './index.css';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Navbar />
-    </div>
-  );
+    <BrowserRouter>
+      <Navbar/>
+      <Footer/>
+    </BrowserRouter>
+  )
 }
 
 export default App;
