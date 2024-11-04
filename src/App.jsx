@@ -1,7 +1,15 @@
-const App = () => {
+import React from 'react';
+import Navbar from './components/Navbar';
+
+import './index.css';
+import './App.css';
+
+function App() {
   return (
-    <div>App</div>
-  )
+    <div>
+      <Navbar />
+    </div>
+  );
 }
 
-export default App
+export default App;
