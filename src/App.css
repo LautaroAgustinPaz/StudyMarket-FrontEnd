@@ -1,31 +1,28 @@
 /*      Navbar      */
 
 .navbar {
-    position: relative;
-    padding: 10px 15px 15px 15px;
+  position: relative;
+  padding: 10px 15px 15px 15px;
 }
 
 .navbar::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px; /* Grosor de la línea */
-    background: linear-gradient(to right,
-            #2CD59F,
-            #1969C2);
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #2cd59f, #1969c2);
 }
-
 
 /*      Footer      */
 
 footer {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 1;
   z-index: 1;
-
+  display: block;
 }
 
 footer h5 {
