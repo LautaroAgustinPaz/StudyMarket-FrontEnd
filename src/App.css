@@ -31,7 +31,7 @@
 .nav-link-custom:hover {
   color: #1969C2;
     background: linear-gradient(90deg, #05042C, #2CD89E);
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
@@ -43,8 +43,21 @@
   color: #2CD89E;
 }
 
-/*      Menu Hamburguesa      */
+.line-personalizada {
+  height: -15px;
+  width: 2px;
+  background-color: #C7C7C7;
+  margin: 0px 30px 0px 30px
+}
 
+.Icons-PerfilyCarrito {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+/*      Menu Hamburguesa      */
 .navbar-toggler,
 .btn-close,
 .btn-close-white {

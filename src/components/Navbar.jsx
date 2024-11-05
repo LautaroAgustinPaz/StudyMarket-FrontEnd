@@ -1,6 +1,9 @@
 import {Link} from "react-router-dom";
 
 const Navbar = () => {
+
+
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary absolute-top">
       <div className="container-fluid">
@@ -43,6 +46,18 @@ const Navbar = () => {
               <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
               <button className="btn btn-outline-success" type="submit">Buscar</button>
             </form>
+
+            <div class="line-personalizada"></div>
+
+            <div className="Icons-PerfilyCarrito">            
+              <Link to="#" className="Icon-container-p">
+                <img src="../../public/images/Perfil.svg" alt="Perfil" width="40" height="42"/>
+              </Link>
+              <Link to="#" className="Icon-container-c">
+                <img src="../../public/images/Carrito.svg" alt="Perfil" width="40" height="42"/>
+              </Link>
+            </div>
+            
           </div>
         </div>
       </div>
