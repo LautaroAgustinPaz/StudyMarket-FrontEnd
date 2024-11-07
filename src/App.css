@@ -15,6 +15,64 @@
   background: linear-gradient(to right, #2cd59f, #1969c2);
 }
 
+.navbar-brand-spacing {
+  padding-right: 50px;
+}
+
+.navbar-spacing {
+  gap: 16px;
+}
+
+.nav-link-custom {
+  color: #05042C;
+  font-weight: 500;
+}
+
+.nav-link-custom:hover {
+  color: #1969C2;
+    background: linear-gradient(90deg, #05042C, #2CD89E);
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-item.dropdown .dropdown-toggle::after {
+  color: #05042C;
+}
+
+.nav-item.dropdown .dropdown-toggle:hover::after {
+  color: #2CD89E;
+}
+
+.line-personalizada {
+  height: -15px;
+  width: 2px;
+  background-color: #C7C7C7;
+  margin: 0px 30px 0px 30px
+}
+
+.Icons-PerfilyCarrito {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+/*      Menu Hamburguesa      */
+.navbar-toggler,
+.btn-close,
+.btn-close-white {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus,
+.btn-close-white:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 /*      Footer      */
 
 footer {
