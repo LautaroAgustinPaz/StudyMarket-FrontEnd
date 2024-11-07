@@ -1,5 +1,5 @@
 import React from 'react'
-import FormularioRegistro from '../components/FormularioRegistro'
+import FormularioRegistro from '../components/formularios/FormularioRegistro'
 
 const Registro = () => {
   return (

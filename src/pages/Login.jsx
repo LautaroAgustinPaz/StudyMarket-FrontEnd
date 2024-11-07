@@ -1,5 +1,5 @@
 import React from 'react'
-import FormularioLogin from '../components/FormularioLogin'
+import FormularioLogin from '../components/formularios/FormularioLogin'
 
 const Login = () => {
   return (

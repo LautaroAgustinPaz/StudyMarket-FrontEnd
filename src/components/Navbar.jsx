@@ -47,7 +47,7 @@ const Navbar = () => {
               <button className="btn btn-outline-success" type="submit">Buscar</button>
             </form>
 
-            <div class="line-personalizada"></div>
+            <div className="line-personalizada"></div>
 
             <div className="Icons-PerfilyCarrito">            
               <Link to="#" className="Icon-container-p">
