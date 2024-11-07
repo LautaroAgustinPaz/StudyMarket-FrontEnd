@@ -5,6 +5,7 @@ import Productos from '../pages/Productos'
 import NoEncontrado from '../pages/NoEncontrado'
 import Ayuda from '../pages/Ayuda'
 import Registro from '../pages/Registro'
+import Login from '../pages/Login'
 
 const Rutas = () => {
 
@@ -29,6 +30,10 @@ const Rutas = () => {
             {
                 path: '/registro',
                 element: <Registro />
+            },
+            {
+                path: '/login',
+                element: <Login />
             },
             {
                 path: '*',
