@@ -23,16 +23,13 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link className="nav-link nav-link-custom" to="/">Inicio</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link nav-link-custom" to="/tienda">Tienda</Link>
-              </li>
               <li className="nav-item dropdown">
                 <Link className="nav-link nav-link-custom dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Productos
                 </Link>
                 <ul className="dropdown-menu">
-                  <li><Link className="dropdown-item nav-link-custom" to="/">Apuntes</Link></li>
-                  <li><Link className="dropdown-item nav-link-custom" to="/">Libros</Link></li>           
+                  <li><Link className="dropdown-item nav-link-custom" to="/productos/apuntes">Apuntes</Link></li>
+                  <li><Link className="dropdown-item nav-link-custom" to="/productos/libros">Libros</Link></li>           
                 </ul>
               </li>
               <li className="nav-item">
@@ -53,7 +50,7 @@ const Navbar = () => {
               <Link to="#" className="Icon-container-p">
                 <img src="../../public/images/Perfil.svg" alt="Perfil" width="40" height="42"/>
               </Link>
-              <Link to="#" className="Icon-container-c">
+              <Link to="/carrito" className="Icon-container-c">
                 <img src="../../public/images/Carrito.svg" alt="Perfil" width="40" height="42"/>
               </Link>
             </div>
