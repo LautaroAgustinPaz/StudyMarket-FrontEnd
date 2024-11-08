@@ -1,13 +1,15 @@
 import { useRoutes } from 'react-router-dom'
 import Inicio from '../pages/Inicio'
-import Nosotros from '../pages/Conocenos'
-import Productos from '../pages/Productos'
-import NoEncontrado from '../pages/NoEncontrado'
+import Apuntes from '../pages/Apuntes'
+import Libros from '../pages/Libros'
 import Ayuda from '../pages/Ayuda'
+import Conocenos from '../pages/Conocenos'
 import Registro from '../pages/Registro'
 import Login from '../pages/Login'
 import OlvidoContraseña from '../pages/OlvidoContraseña'
 import RecuperarContraseña from '../pages/RecuperarContraseña'
+import Carrito from '../pages/Carrito'
+import NoEncontrado from '../pages/NoEncontrado'
 
 const Rutas = () => {
 
@@ -18,12 +20,16 @@ const Rutas = () => {
                 element: <Inicio />
             },
             {
-                path: '/nosotros',
-                element: <Productos/>
+                path: '/productos/apuntes',
+                element: <Apuntes/>
+            },
+                        {
+                path: '/productos/libros',
+                element: <Libros/>
             },
             {
                 path: '/nosotros',
-                element: <Nosotros />
+                element: <Conocenos />
             },
             {
                 path: '/ayuda',
@@ -44,6 +50,10 @@ const Rutas = () => {
             {
                 path: '/recuperar-contraseña',
                 element: <RecuperarContraseña />
+            },
+            {
+                path: '/carrito',
+                element: <Carrito />
             },
             {
                 path: '*',
