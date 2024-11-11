@@ -8,6 +8,7 @@ import Registro from '../pages/Registro'
 import Login from '../pages/Login'
 import OlvidoContraseña from '../pages/OlvidoContraseña'
 import RecuperarContraseña from '../pages/RecuperarContraseña'
+import CargarProducto from '../pages/CargarProducto'
 
 const Rutas = () => {
 
@@ -44,6 +45,10 @@ const Rutas = () => {
             {
                 path: '/recuperar-contraseña',
                 element: <RecuperarContraseña />
+            },
+            {
+                path: '/cargar-producto',
+                element: <CargarProducto />
             },
             {
                 path: '*',

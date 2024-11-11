@@ -6,7 +6,7 @@ const Inicio = () => {
       <div id="carouselExample" className="carousel slide">
         <div className="carousel-inner">
             <div className="carousel-item active">
-            <img src="../../public/images/Banner1.png" className="d-block w-100" alt="..."/>
+            <img src="/images/Banner1.png" className="d-block w-100" alt="..."/>
             </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -22,7 +22,7 @@ const Inicio = () => {
         <div className="row">
         <div className="col-md-4 col-sm-12 mb-4"> 
           <div className="card text-bg-dark text-center align-middle ">
-            <img src="../../public/cards/img-4.jpg" className="card-img" alt="..."/>
+            <img src="/cards/img-4.jpg" className="card-img" alt="..."/>
             <div className="card-img-overlay">
               <h5 className="card-title">Card title</h5>
               <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -31,7 +31,7 @@ const Inicio = () => {
         </div>
         <div className="col-md-4 col-sm-12 mb-4"> 
           <div className="card text-bg-dark text-center align-middle ">
-            <img src="../../public/cards/img-4.jpg" className="card-img" alt="..."/>
+            <img src="/cards/img-4.jpg" className="card-img" alt="..."/>
             <div className="card-img-overlay">
               <h5 className="card-title">Card title</h5>
               <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -40,7 +40,7 @@ const Inicio = () => {
         </div>
         <div className="col-md-4 col-sm-12 mb-4"> 
           <div className="card text-bg-dark text-center align-middle ">
-            <img src="../../public/cards/img-4.jpg" className="card-img" alt="..."/>
+            <img src="/cards/img-4.jpg" className="card-img" alt="..."/>
             <div className="card-img-overlay">
               <h5 className="card-title">Card title</h5>
               <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
