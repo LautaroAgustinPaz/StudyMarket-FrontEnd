@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "nombre": "Apunte de Matemática Básica",
+        "precio": 1500,
+        "imagen": "https://example.com/imagenes/apunte-matematica-basica.jpg",
+        "descripcion": "Apunte completo sobre conceptos básicos de matemáticas, ideal para principiantes.",
+        "categoria": "apuntes"
+    },
+    {
+        "id": 2,
+        "nombre": "Apunte de Física Mecánica",
+        "precio": 2000,
+        "imagen": "https://example.com/imagenes/apunte-fisica-mecanica.jpg",
+        "descripcion": "Resumen de teoría y ejercicios de mecánica para el primer año de universidad.",
+        "categoria": "apuntes"
+    },
+    {
+        "id": 3,
+        "nombre": "Apunte de Historia Universal",
+        "precio": 1800,
+        "imagen": "https://example.com/imagenes/apunte-historia-universal.jpg",
+        "descripcion": "Contiene los hechos más relevantes de la historia universal hasta la era moderna.",
+        "categoria": "apuntes"
+    },
+    {
+        "id": 4,
+        "nombre": "Apunte de Química Orgánica",
+        "precio": 2500,
+        "imagen": "https://example.com/imagenes/apunte-quimica-organica.jpg",
+        "descripcion": "Resumen con fórmulas y conceptos esenciales de química orgánica.",
+        "categoria": "apuntes"
+    },
+    {
+        "id": 5,
+        "nombre": "Apunte de Programación en C++",
+        "precio": 2300,
+        "imagen": "https://example.com/imagenes/apunte-programacion-cpp.jpg",
+        "descripcion": "Introducción a la programación en C++ con ejemplos prácticos.",
+        "categoria": "apuntes"
+    },
+    {
+        "id": 6,
+        "nombre": "Apunte de Psicología General",
+        "precio": 1600,
+        "imagen": "https://example.com/imagenes/apunte-psicologia-general.jpg",
+        "descripcion": "Apunte sobre teorías y conceptos básicos de psicología general.",
+        "categoria": "apuntes"
+    },
+    {
+        "id": 7,
+        "nombre": "Apunte de Economía Básica",
+        "precio": 1700,
+        "imagen": "https://example.com/imagenes/apunte-economia-basica.jpg",
+        "descripcion": "Conceptos y modelos económicos básicos para estudiantes de economía.",
+        "categoria": "apuntes"
+    },
+    {
+        "id": 8,
+        "nombre": "Apunte de Álgebra Lineal",
+        "precio": 2100,
+        "imagen": "https://example.com/imagenes/apunte-algebra-lineal.jpg",
+        "descripcion": "Incluye ejercicios y teoría fundamental de álgebra lineal.",
+        "categoria": "apuntes"
+    },
+    {
+        "id": 9,
+        "nombre": "Apunte de Filosofía Moderna",
+        "precio": 1900,
+        "imagen": "https://example.com/imagenes/apunte-filosofia-moderna.jpg",
+        "descripcion": "Resumen de las principales corrientes y pensadores de la filosofía moderna.",
+        "categoria": "apuntes"
+    },
+    {
+        "id": 10,
+        "nombre": "Apunte de Contabilidad Básica",
+        "precio": 1400,
+        "imagen": "https://example.com/imagenes/apunte-contabilidad-basica.jpg",
+        "descripcion": "Fundamentos de contabilidad para estudiantes de administración.",
+        "categoria": "apuntes"
+    },
+    {
+        "id": 11,
+        "nombre": "Libro de Cálculo Avanzado",
+        "precio": 4500,
+        "imagen": "https://example.com/imagenes/libro-calculo-avanzado.jpg",
+        "descripcion": "Libro completo sobre cálculo avanzado con teoría y ejercicios resueltos.",
+        "categoria": "libros"
+    },
+    {
+        "id": 12,
+        "nombre": "Libro de Física Cuántica",
+        "precio": 5000,
+        "imagen": "https://example.com/imagenes/libro-fisica-cuantica.jpg",
+        "descripcion": "Explora los fundamentos y aplicaciones de la física cuántica.",
+        "categoria": "libros"
+    },
+    {
+        "id": 13,
+        "nombre": "Libro de Historia de América",
+        "precio": 3800,
+        "imagen": "https://example.com/imagenes/libro-historia-america.jpg",
+        "descripcion": "Recorrido por los eventos clave de la historia americana.",
+        "categoria": "libros"
+    },
+    {
+        "id": 14,
+        "nombre": "Libro de Química Inorgánica",
+        "precio": 4700,
+        "imagen": "https://example.com/imagenes/libro-quimica-inorganica.jpg",
+        "descripcion": "Profundiza en los elementos y compuestos de la química inorgánica.",
+        "categoria": "libros"
+    },
+    {
+        "id": 15,
+        "nombre": "Libro de Introducción a Python",
+        "precio": 4200,
+        "imagen": "https://example.com/imagenes/libro-python.jpg",
+        "descripcion": "Guía práctica para aprender programación en Python.",
+        "categoria": "libros"
+    },
+    {
+        "id": 16,
+        "nombre": "Libro de Psicología Social",
+        "precio": 3600,
+        "imagen": "https://example.com/imagenes/libro-psicologia-social.jpg",
+        "descripcion": "Estudio de cómo los individuos interactúan en un contexto social.",
+        "categoria": "libros"
+    },
+    {
+        "id": 17,
+        "nombre": "Libro de Economía Internacional",
+        "precio": 3900,
+        "imagen": "https://example.com/imagenes/libro-economia-internacional.jpg",
+        "descripcion": "Análisis de los mercados internacionales y comercio global.",
+        "categoria": "libros"
+    },
+    {
+        "id": 18,
+        "nombre": "Libro de Álgebra Abstracta",
+        "precio": 4600,
+        "imagen": "https://example.com/imagenes/libro-algebra-abstracta.jpg",
+        "descripcion": "Conceptos avanzados de álgebra para estudios matemáticos.",
+        "categoria": "libros"
+    },
+    {
+        "id": 19,
+        "nombre": "Libro de Filosofía Contemporánea",
+        "precio": 4000,
+        "imagen": "https://example.com/imagenes/libro-filosofia-contemporanea.jpg",
+        "descripcion": "Reflexión sobre los principales filósofos y teorías contemporáneas.",
+        "categoria": "libros"
+    },
+    {
+        "id": 20,
+        "nombre": "Libro de Contabilidad Avanzada",
+        "precio": 4300,
+        "imagen": "https://example.com/imagenes/libro-contabilidad-avanzada.jpg",
+        "descripcion": "Enfoque avanzado de la contabilidad y sus aplicaciones en la empresa.",
+        "categoria": "libros"
+    }
+]
