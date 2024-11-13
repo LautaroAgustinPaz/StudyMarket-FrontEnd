@@ -9,6 +9,7 @@ import Login from '../pages/Login'
 import OlvidoContraseña from '../pages/OlvidoContraseña'
 import RecuperarContraseña from '../pages/RecuperarContraseña'
 import CargarProducto from '../pages/CargarProducto'
+import Perfil from '../pages/Perfil'
 
 const Rutas = () => {
 
@@ -49,6 +50,10 @@ const Rutas = () => {
             {
                 path: '/cargar-producto',
                 element: <CargarProducto />
+            },
+            {
+                path: '/perfil',
+                element: <Perfil />
             },
             {
                 path: '*',
