@@ -10,6 +10,7 @@ import OlvidoContraseña from '../pages/OlvidoContraseña'
 import RecuperarContraseña from '../pages/RecuperarContraseña'
 import CargarProducto from '../pages/CargarProducto'
 import Perfil from '../pages/Perfil'
+import ProductosDetalle from '../pages/ProductosDetalle'
 
 const Rutas = () => {
 
@@ -20,8 +21,12 @@ const Rutas = () => {
                 element: <Inicio />
             },
             {
-                path: '/nosotros',
+                path: '/productos',
                 element: <Productos/>
+            },
+            {
+                path: '/detalleproducto',
+                element: <ProductosDetalle/>
             },
             {
                 path: '/nosotros',
