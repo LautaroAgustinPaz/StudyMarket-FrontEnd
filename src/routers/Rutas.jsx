@@ -30,10 +30,7 @@ const Rutas = () => {
                 path: '/productos/libros',
                 element: <Libros/>
             },
-            {
-                path: '/detalleproducto',
-                element: <ProductosDetalle/>
-            },
+
             {
                 path: '/nosotros',
                 element: <Conocenos />
