@@ -1,8 +1,13 @@
 import React from 'react'
+import ContenedorListadoProductos from '../components/ContenedorListadoProductos'
+import ContenedorProductosDetalle from './ContenedorProductosDetalle'
 
 const Apuntes = () => {
   return (
-    <h1>Apuntes</h1>
+    <>
+      <ContenedorListadoProductos />
+      {/* <ContenedorProductosDetalle ItemID={2} /> */}
+    </>
   )
 }
 

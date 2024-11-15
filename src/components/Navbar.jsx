@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-body-tertiary absolute-top">
       <div className="container-fluid">
         <Link className="navbar-brand navbar-brand-spacing" to="/">
-          <img src="../../public/logo/Logo.png" alt="StudyMarket" width="40" height="42"/>
+          <img src="/logo/Logo.png" alt="StudyMarket" width="40" height="42"/>
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -48,13 +48,12 @@ const Navbar = () => {
 
             <div className="Icons-PerfilyCarrito">            
               <Link to="#" className="Icon-container-p">
-                <img src="../../public/images/Perfil.svg" alt="Perfil" width="40" height="42"/>
+                <img src="/images/Perfil.svg" alt="Perfil" width="40" height="42"/>
               </Link>
               <Link to="/carrito" className="Icon-container-c">
                 <img src="../../public/images/Carrito.svg" alt="Perfil" width="40" height="42"/>
               </Link>
             </div>
-            
           </div>
         </div>
       </div>

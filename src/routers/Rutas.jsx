@@ -10,6 +10,9 @@ import OlvidoContraseña from '../pages/OlvidoContraseña'
 import RecuperarContraseña from '../pages/RecuperarContraseña'
 import Carrito from '../pages/Carrito'
 import NoEncontrado from '../pages/NoEncontrado'
+import CargarProducto from '../pages/CargarProducto'
+import Perfil from '../pages/Perfil'
+
 
 const Rutas = () => {
 

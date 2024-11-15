@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const FormularioLogin = () => {
   return (
@@ -17,6 +18,7 @@ const FormularioLogin = () => {
           <div className="d-grid gap-2 d-md-flex boton">
             <button type="submit" className="btn col-6 mx-auto">Ingresar</button>
           </div>
+          <div className="text-center"> <p>¿No tienes cuenta? <Link to="/registro">Regístrate</Link></p> </div>
         </form>
       </div>
       <div className="image-container d-none d-lg-flex justify-content-center align-items-center col-lg-8">
