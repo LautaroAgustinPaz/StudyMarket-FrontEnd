@@ -12,6 +12,7 @@ import Carrito from '../pages/Carrito'
 import NoEncontrado from '../pages/NoEncontrado'
 import CargarProducto from '../pages/CargarProducto'
 import Perfil from '../pages/Perfil'
+import Productos from '../pages/Productos'
 
 
 const Rutas = () => {
@@ -23,10 +24,14 @@ const Rutas = () => {
                 element: <Inicio />
             },
             {
+                path: '/productos',
+                element: <Productos/>
+            },
+            {
                 path: '/productos/apuntes',
                 element: <Apuntes/>
             },
-                        {
+            {
                 path: '/productos/libros',
                 element: <Libros/>
             },

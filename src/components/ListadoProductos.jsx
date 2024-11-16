@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ListadoProductos = () => {
+const ListadoProductos = ({producto}) => {
   return (
     <section /* style="background-color: #eee;" */>
     <div className="container py-5">
@@ -21,7 +21,7 @@ const ListadoProductos = () => {
                   </div>
                 </div>
                 <div className="col-md-6 col-lg-6 col-xl-6">
-                  <h5>Parcial Analisis Mat 1</h5>
+                  <h5>{producto.nombre}</h5>
                  
                   <div className="mt-1 mb-0 text-muted small">
                     <span>#UBA</span>
