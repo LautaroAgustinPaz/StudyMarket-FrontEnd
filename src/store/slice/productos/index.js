@@ -1,14 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// Slice productos
-export const ProdcutosSlice = createSlice(  //  recibe un OBJ cpn su config con:
+export const productosSlice = createSlice(  
     {
         name: 'productos',
         initialState: {
-            productos: null // la lista de productos
+            productos: null
+        },
+        reducers: {
+            setProductos: (state, action) => {
+                state.productos = action.payload
+            }
         }
     }
 )
 
-// Exportamos el reducer como funcionalidad principal de este modulo
-export default ProdcutosSlice.reducer
+export const {
+    setProductos
+} = productosSlice.actions
+
+
+export default productosSlice.reducer

@@ -1,9 +1,8 @@
-import React from 'react'
-
-const ListadoProductos = ({producto}) => {
+import "./ListadoProductos.css"
+const ListadoProductos = ({producto}) => {     
   return (
-    <section /* style="background-color: #eee;" */>
-    <div className="container py-5">
+    <section className="seccion1"/* style="background-color: #eee;" */>
+    <div className="container py-1">
       <div className="row justify-content-center mb-3">
         <div className="col-md-12 col-xl-10">
           <div className="card shadow-0 border rounded-3">
@@ -11,8 +10,8 @@ const ListadoProductos = ({producto}) => {
               <div className="row">
                 <div className="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
                   <div className="bg-image hover-zoom ripple rounded ripple-surface">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(4).webp"
-                      className="w-100" />
+                    <img src={producto.imagen}
+                      className="rounded img-fluid product-image" />
                     <a href="#!">
                       <div className="hover-overlay">
                         <div className="mask" /* style="background-color: rgba(253, 253, 253, 0.15);" */></div>
@@ -31,13 +30,13 @@ const ListadoProductos = ({producto}) => {
                     <span>#Parcial<br /></span>
                   </div>           
                   <p className="text-truncate mb-4 mb-md-0">
-                    Descripcion: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, ipsa!
+                    {producto.descripcion}
                   </p>
                 </div>
                 <div className="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
                   <div className="d-flex flex-row align-items-center mb-1">
-                    <h4 className="mb-1 me-1">$13.99</h4>
-                    <span className="text-danger"><s>$20.99</s></span>
+                    <h4 className="mb-1 me-1">${producto.precio}</h4>
+                    <span className="text-danger"><s>${producto.precio * 1.25}</s></span>
                   </div>
                   <h6 className="text-success">Entrega inmediata!</h6>
                   <div className="d-flex flex-column mt-4">
