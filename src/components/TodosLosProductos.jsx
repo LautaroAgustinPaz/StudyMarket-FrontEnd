@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getAllProducts } from '../store/slice/productos/acciones-thunk/getAllProducts'
 import { useEffect } from 'react'
 import ListadoProductos from './ListadoProductos'
+import BannerSecundario from './BannerSecundario'
 
 const TodosLosProductos = () => {
     
@@ -14,6 +15,7 @@ const TodosLosProductos = () => {
 
   return (
     <>
+    <BannerSecundario />
     <>
         {
             productos && productos.map(producto => (

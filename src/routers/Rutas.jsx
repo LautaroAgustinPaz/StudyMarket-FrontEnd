@@ -26,7 +26,7 @@ const Rutas = () => {
                 element: <Productos />
             },
             {
-                path: '/nosotros',
+                path: '/conocenos',
                 element: <Conocenos />
             },
             {

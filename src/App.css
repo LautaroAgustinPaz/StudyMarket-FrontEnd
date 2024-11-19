@@ -73,6 +73,49 @@
   box-shadow: none;
 }
 
+/* Banner secundario */
+.banner-secundario {
+  background: linear-gradient(to right, #2cd59f, #1969c2);
+  margin-bottom: 20px;
+
+}
+.banner-secundario h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 50px;
+}
+.banner-secundario p {
+  color: #fff;
+}
+
+.contenedor-btns_banner {
+  margin-top: 40px;
+}
+.btn-custom_banner {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2); /* Fondo blanco semi-transparente */
+  backdrop-filter: blur(10px); /* Aplica el desenfoque */
+  -webkit-backdrop-filter: blur(10px);
+  padding: 10px 20px 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Borde semi-transparente */
+  border-radius: 25px;
+}
+.btn-custom_banner:hover {
+  background: rgba(255, 255, 255, 0.3); /* Aumenta la opacidad al pasar el ratón */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.btn-libros {
+  margin-right: 10px;
+}
+.btn-apuntes {
+  margin-left: 10px;
+}
+
+
 /*      Footer      */
 
 footer {
@@ -121,6 +164,7 @@ footer::after {
   border: 1px solid #fff;
 }
 
+
 /* Productos */
 
 .container-card {
@@ -136,3 +180,4 @@ footer::after {
   border: 1px solid red;
 
 }
+
