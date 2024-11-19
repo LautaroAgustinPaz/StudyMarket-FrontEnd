@@ -2,7 +2,7 @@ import React from 'react';
 
 const Item = ({ producto }) => {
   return (
-    <div className="card" style={{ width: '18rem' }}>
+    <div className="card card-custom" style={{ width: '18rem' }}>
       <img src={producto.imagen} alt={producto.nombre} />
       <div className="card-body">
         <h5 className="card-title">{producto.nombre}</h5>

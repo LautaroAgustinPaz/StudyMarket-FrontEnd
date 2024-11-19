@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { pedirDatos } from '../helpers/pedirDatos'
+import { pedirDatos } from '../../helpers/pedirDatos'
 import ItemListado from './ItemListado'
 
 // Pedir información y setear el estado de los productos
 const ContenedorListadoProductos = () => {
 
-  const [productos, setProductos] = useState([])
+  const [productos, setProductos] = useState([]);
 
   useEffect(() => { // se actualiza cuando el componente se monta (no cuando se actualiza)
     pedirDatos()    // ejecuta la funcion de la petición (Helpers -> pedirDatos.js)
@@ -14,6 +14,7 @@ const ContenedorListadoProductos = () => {
       })
   }, [])
 
+  console.log(productos)
 
   return (
     // VISTA: 

@@ -1,7 +1,5 @@
 import { useRoutes } from 'react-router-dom'
 import Inicio from '../pages/Inicio'
-import Apuntes from '../pages/Apuntes'
-import Libros from '../pages/Libros'
 import Ayuda from '../pages/Ayuda'
 import Conocenos from '../pages/Conocenos'
 import Registro from '../pages/Registro'
@@ -25,17 +23,8 @@ const Rutas = () => {
             },
             {
                 path: '/productos',
-                element: <Productos/>
+                element: <Productos />
             },
-            {
-                path: '/productos/apuntes',
-                element: <Apuntes/>
-            },
-            {
-                path: '/productos/libros',
-                element: <Libros/>
-            },
-
             {
                 path: '/nosotros',
                 element: <Conocenos />

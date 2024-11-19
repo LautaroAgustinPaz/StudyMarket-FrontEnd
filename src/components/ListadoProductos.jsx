@@ -1,5 +1,6 @@
-import "./ListadoProductos.css"
-const ListadoProductos = ({producto}) => {     
+import "../pages/Productos.css"
+
+const ListadoProductos = ({ producto }) => {     
   return (
     <section className="seccion1"/* style="background-color: #eee;" */>
     <div className="container py-1">

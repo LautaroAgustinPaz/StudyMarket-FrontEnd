@@ -23,14 +23,8 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link className="nav-link nav-link-custom" to="/">Inicio</Link>
               </li>
-              <li className="nav-item dropdown">
-                <Link className="nav-link nav-link-custom dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Productos
-                </Link>
-                <ul className="dropdown-menu">
-                  <li><Link className="dropdown-item nav-link-custom" to="/productos/apuntes">Apuntes</Link></li>
-                  <li><Link className="dropdown-item nav-link-custom" to="/productos/libros">Libros</Link></li>           
-                </ul>
+              <li className="nav-item">
+                <Link className="nav-link nav-link-custom" to="/productos">Productos</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link nav-link-custom" to="/conocenos">Conócenos</Link>

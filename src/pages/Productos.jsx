@@ -1,11 +1,12 @@
 import React from 'react'
-import ListadoProductos from '../components/ListadoProductos'
+import ContenedorListadoProductos from '../components/productos/ContenedorListadoProductos'
 import TodosLosProductos from '../components/TodosLosProductos'
-import "./Productos.css"
 
 const Productos = () => {
   return (
-   <TodosLosProductos/>
+   <TodosLosProductos /> 
+  // <ContenedorListadoProductos />
+  // <ContenedorProductosDetalle ItemID={2} />
   )
 }
 

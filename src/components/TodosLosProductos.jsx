@@ -4,11 +4,14 @@ import { useEffect } from 'react'
 import ListadoProductos from './ListadoProductos'
 
 const TodosLosProductos = () => {
+    
     const { productos } = useSelector(store => store.productosReducer)
     const dispatch = useDispatch()
+
     useEffect(() => {
         dispatch(getAllProducts())
     }, [])
+
   return (
     <>
     <>
