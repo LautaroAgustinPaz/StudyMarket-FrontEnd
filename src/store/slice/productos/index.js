@@ -9,13 +9,17 @@ export const productosSlice = createSlice(
         reducers: {
             setProductos: (state, action) => {
                 state.productos = action.payload
+            },
+            setProducto: (state, action) => {
+                state.producto = action.payload
             }
         }
     }
 )
 
 export const {
-    setProductos
+    setProductos,
+    setProducto
 } = productosSlice.actions
 
 

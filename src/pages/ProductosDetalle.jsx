@@ -1,5 +1,5 @@
 import React from 'react'
-import DetalleProducto from '../components/DetalleProducto'
+import DetalleProducto from '../components/productos/DetalleProducto'
 
 const ProductosDetalle = () => {
   return (
@@ -7,4 +7,4 @@ const ProductosDetalle = () => {
   )
 }
 
-export default ProductosDetalle
+export default ProductosDetalle 

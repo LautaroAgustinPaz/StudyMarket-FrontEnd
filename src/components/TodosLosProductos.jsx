@@ -8,6 +8,8 @@ const TodosLosProductos = () => {
     
     const { productos } = useSelector(store => store.productosReducer)
     const dispatch = useDispatch()
+    console.log(productos);
+    
 
     useEffect(() => {
         dispatch(getAllProducts())

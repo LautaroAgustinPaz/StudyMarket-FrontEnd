@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "../pages/Productos.css"
 
 const ListadoProductos = ({ producto }) => {     
@@ -41,7 +42,7 @@ const ListadoProductos = ({ producto }) => {
                   </div>
                   <h6 className="text-success">Entrega inmediata!</h6>
                   <div className="d-flex flex-column mt-4">
-                    <button data-mdb-button-init data-mdb-ripple-init className="btn btn-primary btn-sm" type="button">Detalles</button>
+                  <Link to={`/productos/${producto.id}`} className="btn btn-primary btn-sm">Detalles</Link>
                     <button data-mdb-button-init data-mdb-ripple-init className="btn btn-outline-primary btn-sm mt-2" type="button">
                       Añadir al carrito
                     </button>
