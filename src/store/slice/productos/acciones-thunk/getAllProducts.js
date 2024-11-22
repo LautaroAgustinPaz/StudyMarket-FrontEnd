@@ -8,7 +8,6 @@ export const getAllProducts = () => async ( dispatch ) => {
 
     
     try {
-        console.log(url)
         // Arreglo de bug productos (elegir)
          const data = await handleHttp(url + "productos")
         /* const data = await pedirDatos(url) */

@@ -11,6 +11,7 @@ import NoEncontrado from '../pages/NoEncontrado'
 import CargarProducto from '../pages/CargarProducto'
 import Perfil from '../pages/Perfil'
 import Productos from '../pages/Productos'
+import ProductosDetalle from '../pages/ProductosDetalle'
 
 
 const Rutas = () => {
@@ -24,6 +25,10 @@ const Rutas = () => {
             {
                 path: '/productos',
                 element: <Productos />
+            },
+            {
+                path: '/productos/:id',
+                element: <ProductosDetalle/>
             },
             {
                 path: '/conocenos',
