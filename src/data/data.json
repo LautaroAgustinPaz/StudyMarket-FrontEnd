@@ -1,7 +1,7 @@
 {
   "productos": [
     {
-      "id": 1,
+      "id": "1",
       "nombre": "Apunte de Matemática Básica",
       "precio": 1500,
       "imagen": "https://covers.openlibrary.org/b/id/9179781-L.jpg",
@@ -9,7 +9,7 @@
       "categoria": "apuntes"
     },
     {
-      "id": 2,
+      "id": "2",
       "nombre": "Apunte de Física Mecánica",
       "precio": 2000,
       "imagen": "https://covers.openlibrary.org/b/id/9899231-L.jpg",
@@ -17,7 +17,7 @@
       "categoria": "apuntes"
     },
     {
-      "id": 3,
+      "id": "3",
       "nombre": "Apunte de Historia Universal",
       "precio": 1800,
       "imagen": "https://covers.openlibrary.org/b/id/8242579-L.jpg",
@@ -25,7 +25,7 @@
       "categoria": "apuntes"
     },
     {
-      "id": 4,
+      "id": "4",
       "nombre": "Apunte de Química Orgánica",
       "precio": 2500,
       "imagen": "https://covers.openlibrary.org/b/id/9048675-L.jpg",
@@ -33,7 +33,7 @@
       "categoria": "apuntes"
     },
     {
-      "id": 5,
+      "id": "5",
       "nombre": "Apunte de Programación en C++",
       "precio": 2300,
       "imagen": "https://covers.openlibrary.org/b/id/10513069-L.jpg",
@@ -41,7 +41,7 @@
       "categoria": "apuntes"
     },
     {
-      "id": 6,
+      "id": "6",
       "nombre": "Apunte de Psicología General",
       "precio": 1600,
       "imagen": "https://covers.openlibrary.org/b/id/8233281-L.jpg",
@@ -49,7 +49,7 @@
       "categoria": "apuntes"
     },
     {
-      "id": 7,
+      "id": "7",
       "nombre": "Apunte de Economía Básica",
       "precio": 1700,
       "imagen": "https://covers.openlibrary.org/b/id/8226897-L.jpg",
@@ -57,7 +57,7 @@
       "categoria": "apuntes"
     },
     {
-      "id": 8,
+      "id": "8",
       "nombre": "Apunte de Álgebra Lineal",
       "precio": 2100,
       "imagen": "https://covers.openlibrary.org/b/id/9479235-L.jpg",
@@ -65,7 +65,7 @@
       "categoria": "apuntes"
     },
     {
-      "id": 9,
+      "id": "9",
       "nombre": "Apunte de Filosofía Moderna",
       "precio": 1900,
       "imagen": "https://covers.openlibrary.org/b/id/10427475-L.jpg",
@@ -73,7 +73,7 @@
       "categoria": "apuntes"
     },
     {
-      "id": 10,
+      "id": "10",
       "nombre": "Apunte de Contabilidad Básica",
       "precio": 1400,
       "imagen": "https://covers.openlibrary.org/b/id/8221987-L.jpg",
@@ -81,7 +81,7 @@
       "categoria": "apuntes"
     },
     {
-      "id": 11,
+      "id": "11",
       "nombre": "Libro de Cálculo Avanzado",
       "precio": 4500,
       "imagen": "https://covers.openlibrary.org/b/id/10348924-L.jpg",
@@ -89,7 +89,7 @@
       "categoria": "libros"
     },
     {
-      "id": 12,
+      "id": "12",
       "nombre": "Libro de Física Cuántica",
       "precio": 5000,
       "imagen": "https://covers.openlibrary.org/b/id/10445771-L.jpg",
@@ -97,7 +97,7 @@
       "categoria": "libros"
     },
     {
-      "id": 13,
+      "id": "13",
       "nombre": "Libro de Historia de América",
       "precio": 3800,
       "imagen": "https://covers.openlibrary.org/b/id/10097058-L.jpg",
@@ -105,7 +105,7 @@
       "categoria": "libros"
     },
     {
-      "id": 14,
+      "id": "14",
       "nombre": "Libro de Química Inorgánica",
       "precio": 4700,
       "imagen": "https://covers.openlibrary.org/b/id/9893137-L.jpg",
@@ -113,7 +113,7 @@
       "categoria": "libros"
     },
     {
-      "id": 15,
+      "id": "15",
       "nombre": "Libro de Introducción a Python",
       "precio": 4200,
       "imagen": "https://covers.openlibrary.org/b/id/10695794-L.jpg",
@@ -121,7 +121,7 @@
       "categoria": "libros"
     },
     {
-      "id": 16,
+      "id": "16",
       "nombre": "Libro de Psicología Social",
       "precio": 3600,
       "imagen": "https://covers.openlibrary.org/b/id/8241224-L.jpg",
@@ -129,7 +129,7 @@
       "categoria": "libros"
     },
     {
-      "id": 17,
+      "id": "17",
       "nombre": "Libro de Economía Internacional",
       "precio": 3900,
       "imagen": "https://covers.openlibrary.org/b/id/8250172-L.jpg",
@@ -137,7 +137,7 @@
       "categoria": "libros"
     },
     {
-      "id": 18,
+      "id": "18",
       "nombre": "Libro de Álgebra Abstracta",
       "precio": 4600,
       "imagen": "https://covers.openlibrary.org/b/id/8227390-L.jpg",
@@ -145,7 +145,7 @@
       "categoria": "libros"
     },
     {
-      "id": 19,
+      "id": "19",
       "nombre": "Libro de Filosofía Contemporánea",
       "precio": 4000,
       "imagen": "https://covers.openlibrary.org/b/id/8226977-L.jpg",
@@ -153,7 +153,7 @@
       "categoria": "libros"
     },
     {
-      "id": 20,
+      "id": "20",
       "nombre": "Libro de Contabilidad Avanzada",
       "precio": 4300,
       "imagen": "https://covers.openlibrary.org/b/id/9765390-L.jpg",
@@ -161,6 +161,14 @@
       "categoria": "libros"
     }
   ],
-  "usuarios":[
+  "usuarios": [
+    {
+      "id": "6d18",
+      "nombre": "Martin",
+      "apellido": "Gomez",
+      "correo": "martin_gomez_1996@hotmail.com",
+      "repetirCorreo": "martin_gomez_1996@hotmail.com",
+      "contraseña": "12345"
+    }
   ]
 }

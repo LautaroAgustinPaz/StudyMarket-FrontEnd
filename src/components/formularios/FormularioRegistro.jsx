@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import './FormularioRegistro.css';
 import { useDispatch } from 'react-redux';
-import { createUsuario } from '../../store/slice/usuarios/acciones-thunk/registro';
+import { createUsuario } from '../../store/slice/usuarios/acciones-thunk/createUser';
 
 const FormularioRegistro = () => {
 
   const formInicial = {
+    id: null,
     nombre: '',
     apellido: '',
     correo: '',
@@ -27,11 +28,15 @@ const FormularioRegistro = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     dispatch(createUsuario(form))
-    
+    handleResetear()
   }
   
+  const handleResetear = () => {
+    setForm(formInicial)
+  }
+
   return (
-    <div className="main-content d-lg-flex justify-content-center align-items-center vh-75 ms-2 me-1">
+    <div className="main-content d-lg-flex justify-content-center align-items-center vh-100 ms-2 me-1">
       <div className="form-container col-lg-4 col-12 d-flex flex-column align-items-center justify-content-center">
         <h1 className="text-center mb-4">Registro</h1>
         <form className="w-100" onSubmit={handleSubmit}>

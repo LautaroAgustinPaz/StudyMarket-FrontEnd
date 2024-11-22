@@ -12,6 +12,9 @@ export const productosSlice = createSlice(
             },
             setProducto: (state, action) => {
                 state.producto = action.payload
+            },
+            addProducto: (state, action) => {
+                state.productos = [...state.productos, action.payload]
             }
         }
     }
@@ -19,7 +22,8 @@ export const productosSlice = createSlice(
 
 export const {
     setProductos,
-    setProducto
+    setProducto,
+    addProducto
 } = productosSlice.actions
 
 
