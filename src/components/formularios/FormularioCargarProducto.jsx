@@ -1,3 +1,5 @@
+import { useState } from "react"
+import { useDispatch } from "react-redux"
 
 const FormularioCargarProducto = () => {
   const formInicial = {
@@ -24,7 +26,7 @@ const FormularioCargarProducto = () => {
     
   }
   return (
-    <div className="main-content d-lg-flex justify-content-center align-items-center vh-100 ms-2 me-1">
+    <div className="main-content d-lg-flex justify-content-center align-items-center vh-75 ms-2 me-1">
       <div className="form-container col-lg-4 col-12 d-flex flex-column align-items-center justify-content-center">
         <h1 className="text-center mb-4">Cargar un producto</h1>
         <form className="w-100">

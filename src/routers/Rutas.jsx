@@ -27,6 +27,10 @@ const Rutas = () => {
                 element: <Productos />
             },
             {
+                path: '/cargar-producto',
+                element: <CargarProducto />
+            },
+            {
                 path: '/productos/:id',
                 element: <ProductosDetalle/>
             },
@@ -41,6 +45,10 @@ const Rutas = () => {
             {
                 path: '/registro',
                 element: <Registro />
+            },
+            {
+                path: '/perfil',
+                element: <Perfil />
             },
             {
                 path: '/login',
