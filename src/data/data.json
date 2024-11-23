@@ -159,6 +159,14 @@
       "imagen": "https://covers.openlibrary.org/b/id/9765390-L.jpg",
       "descripcion": "Enfoque avanzado de la contabilidad y sus aplicaciones en la empresa.",
       "categoria": "libros"
+    },
+    {
+      "id": "fa56",
+      "nombre": "Heladera",
+      "precio": 123,
+      "descripcion": "1",
+      "categoria": "Electro",
+      "imagen": "https://www.lg.com/ar/images/heladeras/md06231456/gallery/1100_01.jpg"
     }
   ],
   "usuarios": [
