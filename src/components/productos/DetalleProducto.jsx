@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { getOneProduct } from '../../store/slice/productos/acciones-thunk/getOneProduct'
@@ -9,6 +9,8 @@ const DetalleProducto = () => {
   const { id } = useParams()
   const dispatch = useDispatch()
   const {producto} = useSelector(store => store.productosReducer)
+  console.log('detalleProducto', producto);
+  
 
   useEffect(() => {
     dispatch(getOneProduct(id))

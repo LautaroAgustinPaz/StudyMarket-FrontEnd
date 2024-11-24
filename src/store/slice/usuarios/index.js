@@ -4,7 +4,10 @@ export const usuariosSlice = createSlice(
     {
         name:'usuarios',
         initialState: {
-            usuarios: null,
+            usuarios: [],
+            usuario: null,
+            loading: false,
+            error: null
         },
         reducers: {
             setUsuarios: (state, action) => {

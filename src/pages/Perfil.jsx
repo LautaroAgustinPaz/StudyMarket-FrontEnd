@@ -1,7 +1,23 @@
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
+import { useDispatch, useSelector } from "react-redux"
+import { useEffect } from "react"
 import './Perfil.css'
+import { getOneUser } from "../store/slice/usuarios/acciones-thunk/getOneUser"
 
 const Perfil = () => {
+
+    const { id } = useParams()
+    const dispatch = useDispatch()
+    const { usuarios } = useSelector(store => store.usuariosReducer)
+
+    useEffect(() => {
+        dispatch(getOneUser(id))
+    }, [dispatch, id])
+
+    console.log("detalleUsuario", usuarios);
+    
+
+
   return (
     <div className="container">
         <div className="row">
@@ -11,8 +27,8 @@ const Perfil = () => {
                         <div className="row align-items-center">
                             <div className="col-md-3">
                                 <div className="text-center border-end avatar-text" >
-                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" className="img-fluid avatar-xxl rounded-circle" alt=""/>
-                                    <h4 className="text-primary font-size-20 mt-3 mb-2">Jose Garcia</h4>
+                                    <img src={usuarios.imagen} className="img-fluid avatar-xxl rounded-circle" alt=""/>
+                                    <h4 className="text-primary font-size-20 mt-3 mb-2">{usuarios.nombre} {usuarios.apellido}</h4>
                                     <h5 className="text-muted font-size-13 mb-0">Estudiante de Ingenieria en sistemas</h5>
                                 </div>
                             </div>
@@ -25,7 +41,7 @@ const Perfil = () => {
                                     <div className="row my-4">
                                         <div className="col-md-12">
                                             <div>
-                                                <p className="text-muted mb-2 fw-medium"><i className="mdi mdi-email-outline me-2"></i>JoseGarcia@studymarket.com
+                                                <p className="text-muted mb-2 fw-medium"><i className="mdi mdi-email-outline me-2"></i>{usuarios.correo}
                                                 </p>
                                                 <p className="text-muted fw-medium mb-0"><i className="mdi mdi-phone-in-talk-outline me-2"></i>418-955-4703
                                                 </p>
@@ -109,7 +125,7 @@ const Perfil = () => {
                                     <tbody>
                                         <tr>
                                             <th scope="row">Nombre</th>
-                                            <td>Jose Garcia</td>
+                                            <td>{usuarios.nombre}</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">Universidad</th>
