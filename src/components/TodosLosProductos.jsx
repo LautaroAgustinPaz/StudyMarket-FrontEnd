@@ -8,12 +8,11 @@ const TodosLosProductos = () => {
     
     const { productos } = useSelector(store => store.productosReducer)
     const dispatch = useDispatch()
-    console.log(productos);
-    
+    console.log("[TodosLosProductos]", productos);   
 
     useEffect(() => {
         dispatch(getAllProducts())
-    }, [])
+    }, [dispatch])
 
   return (
     <>
@@ -22,7 +21,7 @@ const TodosLosProductos = () => {
         {
             productos && productos.map(producto => (
                 <ListadoProductos
-                key={producto.id}
+                key={producto._id}
                 producto={producto}
                 />
             ))

@@ -1,6 +1,12 @@
 const handleHttp = async (url, options = { method: 'GET'}) => {
     try {
-        const res = await fetch(url, options)
+        const res = await fetch(url, {
+            ...options,
+            headers: {
+                'content-type': 'application-json',
+                ...options.headers,
+            },
+        })
 
         if(!res.ok) {
             throw new Error("No se pudo obtener los datos fetch");

@@ -23,7 +23,7 @@ const Rutas = () => {
                 element: <Inicio />
             },
             {
-                path: '/productos',
+                path: '/api/productos',
                 element: <Productos />
             },
             {
