@@ -1,37 +1,45 @@
 import React from 'react'
 import './Carrito.css'
+import { BsFillTrash3Fill } from "react-icons/bs";
 
 const CarritoContenedor = () => {
   return (
-      <div className="container container_carrito">
-        <div className="row fila_carrito">
-          <div className="col columna-1_carrito">
-              <h1>Carrito</h1>
-              <p>Productos</p>
-              <h2>1</h2>
-              <div className='productos_carrito'>
-                {/* <ul>
-                {productos.map((producto) => (
-                  <li key={producto.id} className="producto-item">
-                  <span>{producto.nombre}</span> -{" "}
-                  <span>
-                  {producto.cantidad} x ${producto.precio}
-                  </span>
-                  </li>
-                ))}
-                </ul> */}
+      <div className="container_carrito">
+
+        <div className=" fila_carrito">
+          <div className="columna-1_carrito">
+              <div className='carrito_header'>
+                <h1>Carrito</h1>
+                <div className='header_conteo'>
+                  <p>Productos:</p>
+                  <h2>2</h2>
+                </div>
+              </div>
+              <div className='carrito_productos'>
+                <img src='public/images/img-example-carrito.jpg' alt=""/>
+                <div className=''>
+                  <h4>Apunte de Análisis Matematico 1 UBA CBC</h4>
+                  <p>$4.000</p>
+                  <button className='btn-producto-comprar'>Comprar</button>
+                  <button className='btn-producto-eliminar'>< BsFillTrash3Fill className="icon-style" /></button>
+                  {/* Icons - https://react-icons.github.io/react-icons/search/#q=trash */}
+                </div>
               </div>
           </div>
-          <div className="col columna-2_carrito">
-              <h4>Total de Compra</h4>
-              {/* <p>${calcularTotal()}</p> */}
-              <p>$9.000</p>
-              {/* <button onClick={() => alert("Comprar funcionalidad en desarrollo")}>
-              Comprar
-              </button> */}
-              <button>Comprar</button>
+
+          <div className="columna-2_carrito">
+              <div className='carrito_totalYprecio'>
+                <h5>Total de Compra</h5>
+                {/* <h5 className='carrito_totalYprecio'>${calcularTotal()}</h5> */}
+                <p>$9.000</p>
+                {/* <button className='btn-carrito_comprar' onClick={() => alert("Comprar funcionalidad en desarrollo")}>
+                Comprar
+                </button> */}
+              </div>
+              <button className='btn-carrito_comprar'>Comprar</button>
           </div>
         </div>
+
       </div>
   )
 }
