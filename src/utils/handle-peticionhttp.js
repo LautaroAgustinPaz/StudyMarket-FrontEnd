@@ -5,7 +5,7 @@ const handleHttp = async (url, options = { method: 'GET'}) => {
             headers: {
                 'content-type': 'application-json',
                 ...options.headers,
-            },
+            }
         })
 
         if(!res.ok) {
