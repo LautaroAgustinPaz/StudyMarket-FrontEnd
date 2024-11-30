@@ -8,7 +8,7 @@ const TodosLosProductos = () => {
     
     const { productos } = useSelector(store => store.productosReducer)
     const dispatch = useDispatch()
-    console.log("[TodosLosProductos]", productos);   
+    //console.log("[TodosLosProductos]", productos);   
 
     useEffect(() => {
         dispatch(getAllProducts())

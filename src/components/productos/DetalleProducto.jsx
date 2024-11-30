@@ -3,13 +3,19 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { getOneProduct } from '../../store/slice/productos/acciones-thunk/getOneProduct'
 import './DetalleProducto.css'
+import { deleteProducto } from '../../store/slice/productos/acciones-thunk/deleteProducto'
 
 const DetalleProducto = () => {
 
   const { id } = useParams()
   const dispatch = useDispatch()
   const {producto} = useSelector(store => store.productosReducer)
-  console.log('detalleProducto', producto);
+  //console.log('detalleProducto', producto);
+  //console.log('detalleProducto id', id);
+
+  const handleEliminar = id => {
+    dispatch(deleteProducto(id))
+  }
   
 
   useEffect(() => {
@@ -45,6 +51,7 @@ const DetalleProducto = () => {
                   <li>Tecnología de hablar para chatear</li> 
                 </ul> 
               </div> 
+              <button className="btn btn-danger btn-sm mb-3 me-2 btn-add-to-cart" onClick={() => handleEliminar(id)}><i className="bi bi-cart-plus"></i> Borrar Producto </button> 
           </div> 
       </div> 
     </div>

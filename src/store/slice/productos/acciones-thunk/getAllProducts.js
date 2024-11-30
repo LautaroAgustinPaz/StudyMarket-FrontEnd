@@ -12,7 +12,7 @@ export const getAllProducts = () => async ( dispatch ) => {
          const data = await handleHttp(url + "productos/")
         /* const data = await pedirDatos(url) */
         dispatch(setProductos(data))
-        console.log("[getAllProducts]", data);
+        //console.log("[getAllProducts]", data);
         
         
     } catch (error) {

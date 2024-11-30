@@ -16,6 +16,11 @@ export const productosSlice = createSlice(
             },
             addProducto: (state, action) => {
                 state.productos = [...state.productos, action.payload]
+            },
+            removeProducto: (state, action) => {
+                const id = action.payload._id
+                const nuevoEstadoProductos = state.productos.filter(prod => prod._id !== id)
+                state.productos = nuevoEstadoProductos
             }
         }
     }
@@ -24,7 +29,8 @@ export const productosSlice = createSlice(
 export const {
     setProductos,
     setProducto,
-    addProducto
+    addProducto,
+    removeProducto
 } = productosSlice.actions
 
 

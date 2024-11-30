@@ -31,7 +31,7 @@ const Rutas = () => {
                 element: <CargarProducto />
             },
             {
-                path: '/productos/:id',
+                path: '/api/productos/:id',
                 element: <ProductosDetalle/>
             },
             {
