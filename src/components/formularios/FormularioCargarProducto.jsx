@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useDispatch } from "react-redux"
 import { createProducto } from "../../store/slice/productos/acciones-thunk/addProduct"
+import handleNotificacionCargado from "../../utils/handle-notificacionCargado"
 
 const FormularioCargarProducto = () => {
   const formInicial = {
@@ -25,6 +26,7 @@ const FormularioCargarProducto = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    handleNotificacionCargado() 
     dispatch(createProducto(form))
     handleResetear()
   }

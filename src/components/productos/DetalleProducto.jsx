@@ -1,20 +1,26 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { getOneProduct } from '../../store/slice/productos/acciones-thunk/getOneProduct'
 import './DetalleProducto.css'
 import { deleteProducto } from '../../store/slice/productos/acciones-thunk/deleteProducto'
+import handleNotificacionElimiar from '../../utils/handle-notificacionEliminar'
 
 const DetalleProducto = () => {
 
-  const { id } = useParams()
   const dispatch = useDispatch()
+  const navigate = useNavigate()
+  const { id } = useParams()
   const {producto} = useSelector(store => store.productosReducer)
   //console.log('detalleProducto', producto);
   //console.log('detalleProducto id', id);
 
   const handleEliminar = id => {
-    dispatch(deleteProducto(id))
+    handleNotificacionElimiar(() => {
+      dispatch(deleteProducto(id))
+      navigate('/api/productos')
+    })
+
   }
   
 

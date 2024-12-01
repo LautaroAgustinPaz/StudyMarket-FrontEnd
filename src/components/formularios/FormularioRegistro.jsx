@@ -2,16 +2,17 @@ import { useState } from 'react';
 import './FormularioRegistro.css';
 import { useDispatch } from 'react-redux';
 import { createUsuario } from '../../store/slice/usuarios/acciones-thunk/createUser';
-
+ 
 const FormularioRegistro = () => {
 
   const formInicial = {
-    id: null,
-    nombre: '',
+    //id: null,
+    name: '',
     apellido: '',
-    correo: '',
-    repetirCorreo: '',
-    contraseña: ''
+    email: '',
+    repetirEmail: '',
+    password: '',
+    confirm_password: '',
   }
 
   const [ form, setForm ] = useState(formInicial)
@@ -41,8 +42,8 @@ const FormularioRegistro = () => {
         <h1 className="text-center mb-4">Registro</h1>
         <form className="w-100" onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label htmlFor="nombre" className="form-label">Nombre</label>
-            <input type="text" className="form-control" id="lbl-nombre" name='nombre' onChange={handleChange} value={form.nombre}/>
+            <label htmlFor="name" className="form-label">Nombre</label>
+            <input type="text" className="form-control" id="lbl-name" name='name' onChange={handleChange} value={form.name}/>
             <div id="emailHelp" className="form-text">Tu nombre completo</div>
           </div>
           <div className="mb-3">
@@ -51,18 +52,22 @@ const FormularioRegistro = () => {
             <div id="emailHelp" className="form-text">Tu apellido completo</div>
           </div>
           <div className="mb-3">
-            <label htmlFor="correo" className="form-label">Correo</label>
-            <input type="email" className="form-control" id="lbl-correo" name='correo' onChange={handleChange} value={form.correo}/>
+            <label htmlFor="email" className="form-label">Correo</label>
+            <input type="email" className="form-control" id="lbl-email" name='email' onChange={handleChange} value={form.email}/>
             <div id="emailHelp" className="form-text">Nunca compartiremos tu correo con nadie</div>
           </div>
           <div className="mb-3">
-            <label htmlFor="repetircorreo" className="form-label">Repetir correo</label>
-            <input type="email" className="form-control" id="lbl-repetirCorreo" name='repetirCorreo' onChange={handleChange} value={form.repetirCorreo}/>
+            <label htmlFor="repetirEmail" className="form-label">Repetir correo</label>
+            <input type="email" className="form-control" id="lbl-repetirEmail" name='repetirEmail' onChange={handleChange} value={form.repetirEmail}/>
             <div id="emailHelp" className="form-text">Repetir el correo que colocaste</div>
           </div>
           <div className="mb-3">
-            <label htmlFor="contraseña" className="form-label">Contraseña</label>
-            <input type="password" className="form-control" id="lbl-contraseña" name='contraseña' onChange={handleChange} value={form.contraseña}/>
+            <label htmlFor="password" className="form-label">Contraseña</label>
+            <input type="password" className="form-control" id="lbl-password" name='password' onChange={handleChange} value={form.password}/>
+          </div>
+          <div className="mb-3">
+            <label htmlFor="confirm_password" className="form-label">Repetir Contraseña</label>
+            <input type="confirm_password" className="form-control" id="lbl-confirm_password" name='confirm_password' onChange={handleChange} value={form.confirm_password}/>
           </div>
           <div className="d-grid gap-2 d-md-flex boton">
             <button type="submit" className="btn col-6 mx-auto">Registrarse</button>
