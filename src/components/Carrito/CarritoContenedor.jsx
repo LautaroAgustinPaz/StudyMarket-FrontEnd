@@ -17,10 +17,10 @@ const CarritoContenedor = () => {
               </div>
               <div className='carrito_productos'>
                 <img src='public/images/img-example-carrito.jpg' alt=""/>
-                <div className=''>
+                <div>
                   <h4>Apunte de Análisis Matematico 1 UBA CBC</h4>
                   <p>$4.000</p>
-                  <button className='btn-producto-comprar'>Comprar</button>
+                  <button className='btn-producto-comprar'>Comprar ahora</button>
                   <button className='btn-producto-eliminar'>< BsFillTrash3Fill className="icon-style" /></button>
                   {/* Icons - https://react-icons.github.io/react-icons/search/#q=trash */}
                 </div>
@@ -31,7 +31,7 @@ const CarritoContenedor = () => {
               <div className='carrito_totalYprecio'>
                 <h5>Total de Compra</h5>
                 {/* <h5 className='carrito_totalYprecio'>${calcularTotal()}</h5> */}
-                <p>$9.000</p>
+                <p>$4.000</p>
                 {/* <button className='btn-carrito_comprar' onClick={() => alert("Comprar funcionalidad en desarrollo")}>
                 Comprar
                 </button> */}

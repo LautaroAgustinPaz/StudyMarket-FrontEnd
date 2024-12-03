@@ -11,7 +11,7 @@ const BannerSecundario = () => {
     let mostrarBotones = false;
 
     // Decisiones basadas en la ruta actual
-    if (location.pathname === '/productos') {
+    if (location.pathname === '/api/productos') {
         titulo = 'Productos';
         descripcion = 'Simplifica el aprendizaje y alcanza tus metas.';
         mostrarBotones = true;
@@ -26,7 +26,7 @@ const BannerSecundario = () => {
   return (
     <div className="bg-light text-dark py-5 text-center banner-secundario">
         <h1>{titulo}</h1>
-        <p className="lead">{descripcion}.</p>
+        <p className="lead">{descripcion}</p>
         {mostrarBotones && ( 
         <div className="contenedor-btns_banner">
           <a href="#!" className="btn-custom_banner btn-libros">Libros</a>
