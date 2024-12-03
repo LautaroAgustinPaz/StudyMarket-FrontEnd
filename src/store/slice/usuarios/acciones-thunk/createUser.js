@@ -4,8 +4,7 @@ import handleHttp from "../../../../utils/handle-peticionhttp"
 export const createUsuario = (nuevoUsuario) => async (dispatch) => {
     const url = import.meta.env.VITE_ENDPOINT_BACKEND
     const urlUser = (`${url}usuarios/register`)
-    //delete nuevoUsuario.id
-    console.log(urlUser);
+    //console.log(urlUser);
     
 
     try {
