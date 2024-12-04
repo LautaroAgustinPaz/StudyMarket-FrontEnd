@@ -1,0 +1,50 @@
+/* Estilos para la sección de ayuda */
+.ayuda-section {
+    background-color: #f8f9fa;
+    /* Color de fondo suave */
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ayuda-title {
+    font-size: 2.5rem;
+    color: #007bff;
+    /* Color azul principal */
+    font-weight: bold;
+}
+
+.icon {
+    color: #007bff;
+    /* Color de los íconos */
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: #333;
+    /* Color de las preguntas */
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    /* Color de los textos */
+}
+
+@media (max-width: 768px) {
+    .ayuda-title {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
