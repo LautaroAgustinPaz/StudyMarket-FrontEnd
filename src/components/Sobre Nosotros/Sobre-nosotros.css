@@ -1,0 +1,285 @@
+/* Reutilizamos el contenedor */
+.contenedor-nuestra-mision-y-objetivo {
+    background-color: #fff;
+    width: 100%;
+    min-height: 500px;
+    border-radius: 15px;
+
+    box-sizing: border-box;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+
+/* Card 1 - Nuestra mision */
+.columna-1_backgorund {
+    border-radius: 15px 0px 0px 15px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: rgb(0,163,181);
+    background: radial-gradient(circle, rgba(0,163,181,1) 0%, rgba(44,216,158,1) 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.columna-1_backgorund > img {
+    padding-top: 10px;
+    width: 380px;
+    height: 380px;
+}
+
+.columna-2_mision {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 0px 70px 0px 70px;
+    gap: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna-2_mision > h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.columna-2_mision > p {
+    text-align: center;
+}
+
+
+/*          Card 2 - Nuestro Objetivo       */
+
+.columna-3_backgorund {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border-radius: 0px 15px 15px 0px;
+    background: rgb(0,163,181);
+    background: rgb(81, 142, 248);
+    background: radial-gradient(circle, rgba(81, 142, 248, 1) 0%, rgba(26, 107, 193, 1) 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.columna-3_backgorund > img {
+    padding-top: 10px;
+    width: 440px;
+    height: 440px;
+}
+
+.columna-4_mision {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 0px 70px 0px 70px;
+    gap: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna-4_mision > h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.columna-4_mision > p {
+    text-align: center;
+}
+
+
+/*          Sección - Nuestro Equipo        */
+
+.contenedor-sobre-nosotros {
+    background-color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    padding: 70px 0px 50px 0px;
+}
+
+.h2-nuestro-equipo {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.contenedor_integrantes {
+    margin: 70px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card_integrante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto_integrante {
+    width: 230px;
+    height: 230px;
+    border-radius: 30px;
+}
+
+.nombre_integrante {
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.habilidad_integrante {
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 10px;
+}
+
+
+.habilidad_integrante > p {
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    margin: 5px 40px 5px 40px;
+}
+
+.habilidad_integrante > .full-stack {
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    margin: 5px 32px 5px 32px;
+}
+
+.habilidad_integrante > .front-end {
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    margin: 5px 32px 5px 32px;
+}
+
+.contenedor-btn_redirecciones {
+    margin-top: 10px;
+}
+
+.btn-linkedin, .btn-github {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    background: none;
+    padding: 10px 12px 10px 12px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.btn-linkedin {
+    margin-right: 3px;
+    color: #000000;
+}
+
+.btn-github {
+    margin-left: 3px;
+    color: #000000;
+}
+
+
+
+
+/*          Media Queries           */
+
+@media (max-width: 1037px) {
+
+    .card_integrante {
+        margin: 0px 20px 80px 20px;
+    }
+}
+
+@media (max-width: 939px) {
+
+    /* Reutilizamos el contenedor */
+.contenedor-nuestra-mision-y-objetivo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    }
+
+    .columna-1_backgorund, .columna-3_backgorund {
+    border-radius: 15px 15px 0px 0px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    }
+    
+    .columna-2_mision, .columna-4_mision {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .columna-2_mision, .columna-4_mision {
+        padding: 40px 20px 40px 20px;
+    }
+
+    .img-mision, .img-obj {
+        width: 270px !important;;
+        height: 270px !important;;
+    }
+    
+    .contenedor_integrantes {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .contenedor-nuestra-mision-y-objetivo {
+        background-color: #fff;
+        width: 100%;
+        min-height: 300px;
+
+        box-sizing: border-box;
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+
+    .columna-1_backgorund, .columna-3_backgorund {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .img-mision, .img-obj {
+        width: 210px !important;;
+        height: 210px !important;;
+    }
+    
+}

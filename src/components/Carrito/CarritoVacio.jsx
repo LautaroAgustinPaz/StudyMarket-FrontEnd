@@ -1,4 +1,5 @@
 import React from 'react'
+import './Carrito.css'
 import { Link } from 'react-router-dom'
 
 const CarritoVacio = () => {
