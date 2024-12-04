@@ -1,9 +1,12 @@
+import { useState } from "react"
+import { useDispatch } from "react-redux"
 import { Link } from "react-router-dom"
+import { login } from "../../store/slice/usuarios/acciones-thunk/login"
 
 const FormularioLogin = () => {
   const formInicial = {
-    correo: '',
-    contraseña: ''
+    email: '',
+    password: ''
   }
 
   const [ form, setForm ] = useState(formInicial)
@@ -19,7 +22,7 @@ const FormularioLogin = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    dispatch(createUsuario(form))
+    dispatch(login(form))
     
   }
   return (
@@ -28,13 +31,13 @@ const FormularioLogin = () => {
         <h1 className="text-center mb-4">Ingreso</h1>
         <form className="w-100" onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label htmlFor="correo" className="form-label">Correo</label>
-            <input type="email" className="form-control" id="lbl-correo" name='correo' onChange={handleChange} value={form.correo}/>
+            <label htmlFor="email" className="form-label">Correo</label>
+            <input type="email" className="form-control" id="lbl-email" name='email' onChange={handleChange} value={form.email}/>
             <div id="emailHelp" className="form-text">Nunca compartiremos tu correo con nadie</div>
           </div>
           <div className="mb-3">
-            <label htmlFor="contraseña" className="form-label">Contraseña</label>
-            <input type="password" className="form-control" id="lbl-contraseña" name='contraseña' onChange={handleChange} value={form.contraseña}/>
+            <label htmlFor="password" className="form-label">Contraseña</label>
+            <input type="password" className="form-control" id="lbl-password" name='password' onChange={handleChange} value={form.password}/>
           </div>
           <div className="d-grid gap-2 d-md-flex boton">
             <button type="submit" className="btn col-6 mx-auto">Ingresar</button>

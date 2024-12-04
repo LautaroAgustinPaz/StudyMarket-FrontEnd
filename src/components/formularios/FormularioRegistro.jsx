@@ -12,6 +12,7 @@ const FormularioRegistro = () => {
     email: '',
     repetirEmail: '',
     password: '',
+    imagen: '',
     confirm_password: '',
   }
 

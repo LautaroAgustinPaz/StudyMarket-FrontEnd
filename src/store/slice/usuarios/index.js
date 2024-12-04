@@ -15,10 +15,13 @@ export const usuariosSlice = createSlice(
             },
             addUsuario: (state, action) => {
                 state.usuarios = action.payload
+            },
+            ingresar: (state, action) => {
+                state.usuarios = action.payload
             }
         }
     }
 )
 
-export const {setUsuarios, addUsuario} = usuariosSlice.actions
+export const {setUsuarios, addUsuario, ingresar} = usuariosSlice.actions
 export default usuariosSlice.reducer

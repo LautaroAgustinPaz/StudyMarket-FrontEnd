@@ -51,7 +51,7 @@ const Rutas = () => {
                 element: <Perfil />
             },
             {
-                path: '/login',
+                path: '/api/usuarios/login',
                 element: <Login />
             },
             {

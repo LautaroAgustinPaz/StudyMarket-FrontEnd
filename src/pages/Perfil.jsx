@@ -9,12 +9,14 @@ const Perfil = () => {
     const { id } = useParams()
     const dispatch = useDispatch()
     const { usuarios } = useSelector(store => store.usuariosReducer)
+    console.log({usuarios});
+    
 
     useEffect(() => {
         dispatch(getOneUser(id))
     }, [dispatch, id])
 
-    console.log("detalleUsuario", usuarios);
+    //console.log("detalleUsuario", usuarios);
     
 
 
@@ -28,7 +30,7 @@ const Perfil = () => {
                             <div className="col-md-3">
                                 <div className="text-center border-end avatar-text" >
                                     <img src={usuarios.imagen} className="img-fluid avatar-xxl rounded-circle" alt=""/>
-                                    <h4 className="text-primary font-size-20 mt-3 mb-2">{usuarios.nombre} {usuarios.apellido}</h4>
+                                    <h4 className="text-primary font-size-20 mt-3 mb-2">{usuarios.name} {usuarios.apellido}</h4>
                                     <h5 className="text-muted font-size-13 mb-0">Estudiante de Ingenieria en sistemas</h5>
                                 </div>
                             </div>
@@ -41,7 +43,7 @@ const Perfil = () => {
                                     <div className="row my-4">
                                         <div className="col-md-12">
                                             <div>
-                                                <p className="text-muted mb-2 fw-medium"><i className="mdi mdi-email-outline me-2"></i>{usuarios.correo}
+                                                <p className="text-muted mb-2 fw-medium"><i className="mdi mdi-email-outline me-2"></i>{usuarios.email}
                                                 </p>
                                                 <p className="text-muted fw-medium mb-0"><i className="mdi mdi-phone-in-talk-outline me-2"></i>418-955-4703
                                                 </p>
