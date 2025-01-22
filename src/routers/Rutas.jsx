@@ -1,5 +1,5 @@
 import { useRoutes } from 'react-router-dom'
-import Inicio from '../pages/Inicio'
+import Inicio from '../pages/inicio/Inicio'
 import Ayuda from '../pages/Ayuda'
 import Conocenos from '../pages/Conocenos'
 import Registro from '../pages/Registro'

@@ -16,7 +16,6 @@ const TodosLosProductos = () => {
 
   return (
     <>
-    <BannerSecundario />
     <>
         {
             productos && productos.map(producto => (

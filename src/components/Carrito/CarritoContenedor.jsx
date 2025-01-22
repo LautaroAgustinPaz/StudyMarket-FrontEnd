@@ -12,7 +12,7 @@ const CarritoContenedor = () => {
                 <h1>Carrito</h1>
                 <div className='header_conteo'>
                   <p>Productos:</p>
-                  <h2>2</h2>
+                  <h2>1</h2>
                 </div>
               </div>
               <div className='carrito_productos'>

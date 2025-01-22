@@ -1,0 +1,77 @@
+/* Contenedor principal del banner */
+.container-banner_principal {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  /* Ocupa toda la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(to right, #2cd59fb9, #1968c2b6);
+  /* Respaldo si no carga el video */
+}
+
+/* Video de fondo */
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Contenido encima del video */
+.content {
+  position: relative;
+  z-index: 1;
+  /* Asegura que el texto esté encima del video */
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+/* Título */
+.banner-p_titulo {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Descripción */
+.banner-p_descripcion {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0 10%;
+}
+
+/* Estilos de las cards */
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  gap: 15px;
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.card-text {
+  color: #fff;
+}

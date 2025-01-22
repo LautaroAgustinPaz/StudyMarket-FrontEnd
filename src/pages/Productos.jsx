@@ -7,9 +7,9 @@ const Productos = () => {
   return (
     <>
       <BannerSecundario />
-      {/* <TodosLosProductos />  */}
+      <TodosLosProductos /> 
+       {/* <ContenedorListadoProductos /> */}
     </>
-  // <ContenedorListadoProductos />
   // <ContenedorProductosDetalle ItemID={2} />
   )
 }

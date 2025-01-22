@@ -5,10 +5,8 @@ import CarritoVacio from '../components/Carrito/CarritoVacio'
 const Carrito = () => {
   return (
     /* Mostrar cada uno dependiendo si tiene productos el carrito */
-    <>
-      <CarritoVacio />
-      {/* <CarritoContenedor /> */}
-    </>
+      // <CarritoVacio />
+      <CarritoContenedor />
   )
 }
 
