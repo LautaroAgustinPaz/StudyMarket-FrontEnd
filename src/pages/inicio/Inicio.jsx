@@ -6,7 +6,7 @@ const Inicio = () => {
       <div className='container-banner_principal'>
         {/* Video de fondo */}
         <video autoPlay muted loop id="background-video">
-          <source src="public/video/video-4.mp4" type="video/mp4" />
+          <source src="public/video/video-3.mp4" type="video/mp4" />
           Tu navegador no soporta videos HTML5.
         </video>
         {/* Contenido sobre el video */}

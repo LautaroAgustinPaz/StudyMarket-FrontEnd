@@ -32,6 +32,7 @@ const SobreNosotros = () => {
     {/* Seccion - Nuestro equipo */}
     <section className='contenedor-sobre-nosotros'>
         <h2 className='h2-nuestro-equipo'>Nuestro Equipo</h2>
+        <p className='p-nuestro-equipo'>Roles</p>
 
         
         <div className='contenedor_integrantes'>

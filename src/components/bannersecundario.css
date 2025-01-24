@@ -1,0 +1,106 @@
+/* Banner secundario */
+.banner-secundario {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    /* Ocupa toda la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(to right, #2cd59fb9, #1968c2b6);
+    margin-bottom: 20px;
+}
+
+#background-secundario-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content-secundario {
+    position: relative;
+    z-index: 1;
+    /* Asegura que el texto esté encima del video */
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.banner-secundario h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.banner-secundario p {
+    color: #fff;
+}
+
+.contenedor-btns_banner {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-custom_banner {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    /* Fondo blanco semi-transparente */
+    backdrop-filter: blur(10px);
+    /* Aplica el desenfoque */
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px 20px 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Borde semi-transparente */
+    border-radius: 25px;
+}
+
+.btn-custom_banner:hover {
+    background: rgba(255, 255, 255, 0.3);
+    /* Aumenta la opacidad al pasar el ratón */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.btn-libros {
+    margin-right: 10px;
+}
+
+.btn-apuntes {
+    margin-left: 10px;
+}
+
+/*      Media Queries       */
+
+@media (max-width: 480px) {
+    
+    .content-secundario > h1 {
+        font-size: 45px;
+    }
+
+    .content-secundario > p {
+        font-size: 18px;
+    }
+    
+    .contenedor-btns_banner  {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .btn-libros {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .btn-apuntes {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

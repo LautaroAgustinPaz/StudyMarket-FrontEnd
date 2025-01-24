@@ -31,7 +31,7 @@
   /* Asegura que el texto esté encima del video */
   text-align: center;
   color: white;
-  padding: 20px;
+  padding: 30px;
 }
 
 /* Título */
@@ -44,7 +44,7 @@
 
 /* Descripción */
 .banner-p_descripcion {
-  font-size: 1.125rem;
+  font-size: 18px;
   line-height: 1.5;
   color: #fff;
   margin: 0 10%;
@@ -74,4 +74,24 @@
 
 .card-text {
   color: #fff;
+}
+
+@media (max-width: 480px) {
+  
+  .container-banner_principal {
+    height: 95vh;
+  }
+
+  .content {
+    padding: 30px 10px 30px 10px;
+  }
+  
+  .banner-p_titulo {
+    font-size: 40px;
+  }
+
+  .banner-p_descripcion {
+    font-size: 15px;
+  }
+
 }
