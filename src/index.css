@@ -7,6 +7,16 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Urbanist", sans-serif;
+
+    --color-background: #fff;
+
+    --color-degrade-1: #2CD89E;
+
+    --color-degrade-2: #1A6BC1;
+
+    --color-subtitulos: #05042C;
+
+    --color-text: #49454F;
 }
 
 body {

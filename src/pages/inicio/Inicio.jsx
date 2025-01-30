@@ -20,45 +20,52 @@ const Inicio = () => {
         </div>
       </div>
 
+      <h2 className='section-cards_h1'>Beneficios de usar<br />StudyMarket</h2>
       {/* Cards */}
-      <div className="container mt-5">
+      <div className="container cards-conteiner mt-0">
         <div className="row">
+
           {/* Card 1 */}
           <div className="col-md-4 col-sm-12 mb-4">
-            <div className="card text-bg-dark text-center align-middle">
-              <img src="public/cards/card-ganacontusapuntes.jpg" className="card-gana" alt="..." />
-              <div className="card-img-overlay">
-                <h5 className="card-title">Gana dinero</h5>
+
+              <div className="card-background">
+                <div className='card-redondo'>
+                  <img className='card-mini-img' src="public/cards/man-money.svg" alt="" srcset="" />
+                </div>
+                <h5 className="card-titles">Gana dinero</h5>
                 <p className="card-text">
-                  Podrás vender tus apuntes y libros usados, nadie te cobrará comisión por tu esfuerzo
+                  Podrás vender tus apuntes y libros usados, nadie te cobrará comisión por tu esfuerzo. Carga tus apuntes!
                 </p>
               </div>
-            </div>
-          </div>
+
+          </div>     
           {/* Card 2 */}
           <div className="col-md-4 col-sm-12 mb-4">
-            <div className="card text-bg-dark text-center align-middle">
-              <img src="/cards/card-tips.jpg" className="card-tips" alt="..." />
-              <div className="card-img-overlay">
-                <h5 className="card-title">Consejos</h5>
+
+              <div className="card-background">
+                <div className='card-redondo'>
+                  <img className='card-mini-img' src="public/cards/lamparita.svg" alt="" srcset="" />
+                </div>
+                <h5 className="card-titles">Consejos</h5>
                 <p className="card-text">
                   Aprende a exprimir al 100% todos esos apuntes que adquiriste. Lee nuestros posts sobre técnicas de estudio
                 </p>
               </div>
-            </div>
-          </div>
+
+          </div>  
           {/* Card 3 */}
           <div className="col-md-4 col-sm-12 mb-4">
-            <div className="card text-bg-dark text-center align-middle">
-              <img src="/cards/card-conocenos.jpg" className="card-conocenos" alt="..." />
-              <div className="card-img-overlay">
-                <h5 className="card-title">Conócenos</h5>
-                <p className="card-text">
+              <div className="card-background">
+                <div className='card-redondo'>
+                  <img className='card-mini-img' src="public/cards/people.svg" alt="" srcset="" />
+                </div>
+                <h5 className="card-titles">Conócenos</h5>
+                <p className="card-text text-center">
                   Conoce más sobre quienes están detrás de STUDYMARKET y su por qué, todas las respuestas en un solo lugar.
                 </p>
               </div>
-            </div>
           </div>
+
         </div>
       </div>
     </>

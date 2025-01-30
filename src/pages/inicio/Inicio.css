@@ -38,7 +38,7 @@
 .banner-p_titulo {
   font-size: 3rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--color-background);
   margin-bottom: 20px;
 }
 
@@ -50,30 +50,127 @@
   margin: 0 10%;
 }
 
-/* Estilos de las cards */
-.card-img-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+/*            Seccion Cards           */
+
+.cards-conteiner {
+  margin: 0px 0px 60px 0px;
+}
+
+
+/* Seccion - Titulo */
+.section-cards_h1 {
+  text-align: center;
+  margin: 60px 10px 60px 10px;
+  font-weight: 600;
+  color: #1765B7;
+}
+
+/* CARD - Background y espacios */
+.card {
+  border-radius: 15px;
+}
+
+.card-background {
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  min-height: 400px;
+  padding: 20px;
+  background: white;
+  /* Fondo blanco para el contenido */
+  border-radius: 15px;
+  /* Bordes redondeados */
+  position: relative;
+  /* Necesario para posicionar el pseudo-elemento */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
   gap: 15px;
+  overflow: hidden;
+  /* Asegura que el pseudo-elemento no se desborde */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.card-title {
+.card-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #00C4B3, #0081CF);
+  /* Gradiente para el fondo */
+  border-radius: 15px;
+  /* Bordes redondeados */
+  z-index: 1;
+  /* Coloca el degradado detrás del contenido */
+}
+
+.card-background::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  /* Ajusta para dejar espacio para el borde */
+  left: 2px;
+  /* Ajusta para dejar espacio para el borde */
+  right: 2px;
+  /* Ajusta para dejar espacio para el borde */
+  bottom: 2px;
+  /* Ajusta para dejar espacio para el borde */
+  background: white;
+  /* Fondo blanco para el contenido */
+  border-radius: 13px;
+  /* Bordes redondeados ligeramente más pequeños */
+  z-index: 2;
+  /* Coloca el fondo blanco sobre el degradado */
+}
+
+/* Contenido de la card */
+.card-redondo,
+.card-titles,
+.card-text {
+  position: relative;
+  /* Asegura que el contenido esté sobre el fondo blanco */
+  z-index: 3;
+  /* Coloca el contenido sobre el fondo blanco */
+}
+
+.card-redondo {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: linear-gradient(135deg, #00C4B3, #0081CF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-redondo::before {
+  content: '';
+  width: 75px; /* Tamaño interno */
+  height: 75px;
+  background: white; /* Fondo blanco dentro del círculo */
+  border-radius: 50%;
+  display: block;
+}
+
+.card-mini-img {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+}
+
+.card-titles {
   font-size: 30px;
   font-weight: 700;
+  color: var(--color-subtitulos);
+
+  margin-top: 10px;
 }
 
 .card-text {
-  color: #fff;
+  color: var(--color-text);
+  font-size: 15px;
 }
 
 @media (max-width: 480px) {
