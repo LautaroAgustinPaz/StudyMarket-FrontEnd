@@ -2,8 +2,6 @@ import {Link} from "react-router-dom";
 
 const Navbar = () => {
 
-
-
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary absolute-top">
       <div className="container-fluid">
